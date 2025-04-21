@@ -5,7 +5,7 @@ Este proyecto utiliza Tailwind CSS con soporte para modo oscuro implementado med
 ## Estructura de Archivos
 
 ```
-├── index.html --- primer archivo html el el mismo nivel los demás
+├── index.html --- primer archivo html las demas paginas en el mismo nivel
 ├── package.json
 ├── pnpm-lock.yaml
 ├── postcss.config.mjs
@@ -13,9 +13,9 @@ Este proyecto utiliza Tailwind CSS con soporte para modo oscuro implementado med
 │   └── ....
 ├── README.md
 ├── src
-│   ├── css --- estilos [nombre de la pagina].css
+│   ├── css --- estilos page_[nombre de la pagina].css
 │   │   └── globals.css --- estilos generales
-│   └── js --- lógica de javascript [nombre de la pagina].js 
+│   └── js --- lógica de javascript page_[nombre de la pagina].js 
 │       └── utils --- lógica general que se puede reutilizar
 │           └── change_theme.js
 └── vite.config.js
