@@ -1,4 +1,4 @@
-function changeColorTheme() {
+export function changeColorTheme() {
   const isDark = document.documentElement.classList.contains("dark");
 
   if (isDark) {

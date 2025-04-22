@@ -15,7 +15,7 @@ Este proyecto utiliza Tailwind CSS con soporte para modo oscuro implementado med
 ├── src
 │   ├── css --- estilos page_[nombre de la pagina].css
 │   │   └── globals.css --- estilos generales
-│   └── js --- lógica de javascript page_[nombre de la pagina].js 
+│   └── js --- lógica de javascript page_[nombre de la pagina].js
 │       └── utils --- lógica general que se puede reutilizar
 │           └── change_theme.js
 └── vite.config.js
@@ -48,30 +48,9 @@ pnpm dev
 # Construir para producción
 pnpm build
 ```
-
-## Configuración de Tailwind
-
-Asegúrate de que tu `postcss.config.mjs` incluya la configuración necesaria:
-
-```js
-export default {
-  plugins: {
-    '@tailwindcss/postcss': {},
-  }
-}
-```
-
-Y tu `vite.config.js` debe estar configurado correctamente para detectar tus archivos y trabajar con tailwind:
-
-```js
-// vite.config.js ejemplo
-import { defineConfig } from 'vite'
-import tailwindcss from '@tailwindcss/vite'
-
-export default defineConfig({
-  plugins: [tailwindcss()],
-})
-```
+## Configuración
+Las especificaciones de la configuración están en:  
+[CONFIG.md](./CONFIG.md)
 
 ## Estructura de archivos
 
@@ -94,50 +73,101 @@ Para activar el modo oscuro, añade la clase `.dark` al elemento `html` o `body`
 
 ```js
 // Activar modo oscuro
-document.documentElement.classList.add('dark');
+document.documentElement.classList.add("dark");
 
 // Desactivar modo oscuro
-document.documentElement.classList.remove('dark');
+document.documentElement.classList.remove("dark");
 
 // Alternar modo oscuro
-document.documentElement.classList.toggle('dark');
+document.documentElement.classList.toggle("dark");
 ```
-O usar la función ```changeColorTheme()``` de ```src/js/utils/change_theme.js``` que ya cambia automáticamente entre los dos modos
+
+O usar la función `changeColorTheme()` de `src/js/utils/change_theme.js` que ya cambia automáticamente entre los dos modos
 
 ### Uso de Clases Dark Mode
 
 En html:
+
 ```html
 <div class="bg-white text-black dark:bg-gray-800 dark:text-white">
-  Este elemento tendrá fondo blanco y texto negro en modo claro,
-  y fondo gris oscuro con texto blanco en modo oscuro mediante "dark:".
+  Este elemento tendrá fondo blanco y texto negro en modo claro, y fondo gris
+  oscuro con texto blanco en modo oscuro mediante "dark:".
 </div>
 ```
+
 En css **mediante la directiva @apply** dentro de clases o etiquetas:
+
 ```css
 @apply bg-white text-black dark:bg-gray-800 dark:text-white;
 ```
 
+### Archivo `index.html` y `.html`
 
-### Archivo ```index.html``` y ```.html```
 Todos deben tener:
+
 ```html
-<html lang="es"> <!--Para que se carguen correctamente los textos en español-->
+<html lang="es">
+  <!--Para que se carguen correctamente los textos en español-->
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./src/css/globals.css"/> <!-- Para cargar el globals.css-->
+    <link rel="stylesheet" href="./src/css/globals.css" />
+    <!-- Para cargar el globals.css-->
+  </head>
+</html>
 ```
+
+# Scripts del Proyecto
+
+Este proyecto utiliza [Vite](https://vitejs.dev/) como herramienta de desarrollo y construcción, junto con [ESLint](https://eslint.org/) para análisis de código.
+
+## 📜 Scripts disponibles
+
+Puedes ejecutar estos comandos con `npm`, `pnpm` o `yarn` según el gestor de paquetes que uses.
+
+---
+
+### 🔧 `dev`
+
+```bash
+pnpm dev
+```
+Ejecuta el servidor de desarrollo de Vite y abre automáticamente el navegador en la URL local (por defecto, http://localhost:5173).
+
+### 🏗️ `build`
+```bash
+npm build
+```
+Genera una versión optimizada y lista para producción en la carpeta `dist`.
+
+### 👀 `preview`
+```bash
+npm preview
+```
+Sirve localmente la carpeta dist para previsualizar el sitio exactamente como se vería en producción.
+
+### 🧹 `lint`
+```bash
+npm lint
+```
+Ejecuta ESLint en todo el proyecto para mostrar errores y advertencias de estilo o buenas prácticas en tu código JavaScript.
+
+### 🛠️ `lint:fix`
+```bash
+npm lint:fix
+```
+Igual que el anterior, pero además intenta corregir automáticamente los problemas detectados por ESLint.
 
 ## Notas Importantes
 
 - La definición `@custom-variant dark` permite el uso del selector de modo oscuro en todos tus archivos CSS sin importarla en cada uno.
 - Vite es una herramienta de desarrollo web moderna que ofrece un entorno rápido y optimizado tanto para desarrollo como para producción.
-    * ⚙️ Soporta herramientas modernas como Tailwind CSS, PostCSS, Sass, TypeScript, etc.
-    * 🧠 Ideal para proyectos con JavaScript puro, Vue, React, Svelte, etc.
-    * ✅ Vite reemplaza a herramientas más lentas como Webpack, haciendo el desarrollo web más ágil y simple.
+
+  - ⚙️ Soporta herramientas modernas como Tailwind CSS, PostCSS, Sass, TypeScript, etc.
+  - 🧠 Ideal para proyectos con JavaScript puro, Vue, React, Svelte, etc.
+  - ✅ Vite reemplaza a herramientas más lentas como Webpack, haciendo el desarrollo web más ágil y simple.
 
 - Tailwind CSS es un framework de CSS utilitario que permite construir interfaces modernas sin escribir CSS personalizado.
-    * 🧱 Usa clases como flex, pt-4, text-center, etc. para diseñar directamente en el HTML.
-    * ⚡ Rápido de escribir, fácil de mantener.
-    * 🌙 Soporte nativo para modo oscuro.
-    * ✅ Permite desarrollar interfaces limpias y responsivas directamente con clases, sin necesidad de crear hojas de estilos complicadas.
+  - 🧱 Usa clases como flex, pt-4, text-center, etc. para diseñar directamente en el HTML.
+  - ⚡ Rápido de escribir, fácil de mantener.
+  - 🌙 Soporte nativo para modo oscuro.
+  - ✅ Permite desarrollar interfaces limpias y responsivas directamente con clases, sin necesidad de crear hojas de estilos complicadas.
