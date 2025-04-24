@@ -26,7 +26,7 @@ export default defineConfig([
           "args": "after-used",
           "reportUsedIgnorePattern": true,
           "argsIgnorePattern": "^_",
-          "varsIgnorePattern": "^(handled|on)",
+          "varsIgnorePattern": "^_",
         },
       ],
       "quotes": "off",

@@ -1,2 +1,24 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
+
+* {
+  @apply m-0 transition-colors duration-250;
+}
+
+body html {
+  @apply bg-white min-h-screen w-screen overflow-x-hidden;
+}
+
+.logo-main {
+  @apply h-30;
+}
+
+header {
+  @apply w-full max-w-screen h-fit flex flex-row items-center justify-between gap-2 p-3;
+  @apply dark:bg-gray-400;
+}
+
+footer {
+  @apply w-full max-w-screen h-fit flex flex-row items-center justify-between gap-2 p-3;
+  @apply bg-yellow-300 dark:bg-orange-400;
+}
