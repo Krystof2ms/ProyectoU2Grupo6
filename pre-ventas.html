@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/globals.css" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <title>Pre-ventas</title>
+  </head>
+  <body>
+    <h1>Pre-ventas</h1>
+
+    <img
+      class="logo-main"
+      src="/logos/logo_la_huaycha.png"
+      alt="logo La Huaycha"
+    />
+    <div class="flex flex-row gap-10">
+      <button
+        class="flex items-center gap-2 hover:bg-gray-200 p-2 rounded-full"
+        id="theme-toggle"
+        onclick="changeToggleTheme()"
+      >
+        <img
+          src="/icons/icon_sun.svg"
+          alt="icon sun"
+          id="icon-theme"
+          class="stroke-black w-5 h-5"
+        />
+        <p>Cambiar tema</p>
+      </button>
+      <div
+        class="flex flex-row gap-4 justify-around p-3 px-6 bg-gray-300 rounded-full"
+      >
+        <button class="hover:underline font-medium" onclick="goToIndex()">
+          Inicio
+        </button>
+        <button class="hover:underline font-medium" onclick="changePage('juegos')">Juegos</button>
+        <button
+          class="hover:underline font-medium"
+          onclick="changePage('pre-ventas')"
+        >
+          Pre-venta
+        </button>
+        <button 
+        class="hover:underline font-medium"
+        onclick="changePage('acerca-de')"
+        >Acerca de</button>
+      </div>
+    </div>
+
+    <button onclick="goToIndex()">Ir</button>
+    <script src="src/js/utils/change_page.js" defer></script>
+  </body>
+</html>

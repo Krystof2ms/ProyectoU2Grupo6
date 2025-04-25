@@ -19,6 +19,6 @@ header {
 }
 
 footer {
-  @apply w-full max-w-screen h-fit flex flex-row items-center justify-between gap-2 p-3;
+  @apply w-full max-w-screen h-fit flex flex-col gap-2 py-4;
   @apply bg-yellow-300 dark:bg-orange-400;
 }
