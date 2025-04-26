@@ -4,7 +4,6 @@
 
 main {
   @apply font-sans text-center bg-yellow-100 dark:bg-gray-900;
-  @apply mt-2;
 }
 
 h1 {
@@ -13,13 +12,13 @@ h1 {
 }
 
 h2 {
-    @apply text-orange-500 dark:text-yellow-400;
-    @apply text-4xl font-bold my-2;
+  @apply text-orange-500 dark:text-yellow-400;
+  @apply text-4xl font-bold my-2;
 }
 
 .juegos,
 .actividades {
-  @apply flex flex-wrap justify-center gap-5 my-5;
+  @apply flex flex-wrap justify-center gap-5 p-5;
 }
 
 .img-info {
