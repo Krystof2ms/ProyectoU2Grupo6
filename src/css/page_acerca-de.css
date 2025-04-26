@@ -1,5 +1,6 @@
-@import "tailwindcss";
+@import "tailwindcss"; 
 @import "./theme.css";
+
 @custom-variant dark (&:where(.dark, .dark *));
 
 main {
@@ -39,17 +40,18 @@ main {
 
 .title-red {
   @apply text-red-600;
+  @apply dark:to-fuchsia-950;
 }
 
 .title-yellow {
   @apply text-yellow-600;
+  @apply dark:to-emerald-600;
 }
 
 /* Párrafos */
 .section-text {
   @apply text-gray-800 text-justify text-lg;
   @apply dark:text-gray-200;
-  
 }
 
 /* Imagen */
@@ -81,4 +83,37 @@ main {
 
 .btn-facebook {
   @apply bg-blue-600;
+}
+
+/* ------------------------------------------------ */
+/* ESTILOS MODO OSCURO INTEGRADOS (añadidos abajo) */
+/* ------------------------------------------------ */
+
+.dark main {
+  @apply bg-gray-900;
+  background-image: none; /* Opcional: sin fondo en modo oscuro */
+}
+
+.dark .section,
+.dark .section-reverse,
+.dark .section-yellow {
+  @apply bg-gray-800 opacity-90;
+}
+
+.dark .column-content {
+  @apply bg-gray-700 opacity-95 text-white;
+}
+
+.dark .section-title {
+  @apply text-teal-500;
+}
+
+.dark .image-style {
+  @apply brightness-90;
+}
+.dark .logo-footer {
+  @apply bg-white p-2 rounded-xl shadow-md;
+}
+.dark .image-style {
+  @apply brightness-90 shadow-lg shadow-white/30;
 }
