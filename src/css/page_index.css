@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 .container-info {
-  @apply bg-[url(/background/background-6.png)];
+  @apply bg-[url(/background/background-6.png)] dark:contrast-50;
 }
 
 .title-huaycha {
