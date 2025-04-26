@@ -30,9 +30,13 @@ h2 {
 }
 
 .button-info {
-  @apply bg-red-400 dark:bg-red-600 text-white py-2 px-5 my-2 text-lg rounded-lg cursor-pointer transition-colors duration-300 hover:bg-red-500 dark:hover:bg-red-700;
+  @apply bg-red-400 dark:bg-red-600 text-white;
+  @apply py-2 px-5 my-2 text-lg rounded-lg cursor-pointer transition-colors duration-300;
+  @apply hover:bg-red-500 dark:hover:bg-red-700;
 }
 
-.descripcion {
-  @apply mt-8 text-lg text-gray-800 dark:text-gray-300 p-5 bg-white dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-600 rounded-lg max-w-md mx-auto transition-all;
+.description {
+  @apply text-gray-800 dark:text-gray-300 p-5 bg-white dark:bg-gray-800;
+  @apply border-2 border-gray-300 dark:border-gray-600 rounded-lg;
+  @apply mt-8 text-lg max-w-md mx-auto transition-all;
 }

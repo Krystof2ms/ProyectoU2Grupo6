@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite --open",
-    "build": "vite build",
+    "public-src":"mkdir -p public/src/js && cp -r src/js/ public/src",
+    "build": "npm run public-src && vite build",
     "preview": "vite preview",
     "lint:fix": "eslint . --fix",
     "lint": "eslint ."
