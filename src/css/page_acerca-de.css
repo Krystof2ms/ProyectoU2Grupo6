@@ -1,0 +1,84 @@
+@import "tailwindcss";
+@import "./theme.css";
+@custom-variant dark (&:where(.dark, .dark *));
+
+main {
+  @apply bg-gray-100;
+  background-image: url("https://images.unsplash.com/photo-1566837945703-5db08a0b5bc0?auto=format&fit=crop&w=1470&q=80");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Estilos base para secciones */
+.section {
+  @apply flex flex-row items-center justify-center min-h-screen p-4 bg-white opacity-80;
+}
+
+.section-reverse {
+  @apply md:flex-row-reverse items-center justify-center min-h-screen p-4 bg-white opacity-80;
+}
+
+.section-yellow {
+  @apply flex-col-reverse md:flex-row items-center justify-center min-h-screen p-4 bg-yellow-100 opacity-80;
+}
+
+/* Estilos para columnas */
+.column-img {
+  @apply md:w-1/2 p-4;
+}
+
+.column-content {
+  @apply md:w-1/2 p-6 bg-white opacity-90 rounded-xl shadow-xl;
+}
+
+/* Estilos para títulos */
+.section-title {
+  @apply text-3xl font-bold text-center mb-4;
+}
+
+.title-red {
+  @apply text-red-600;
+}
+
+.title-yellow {
+  @apply text-yellow-600;
+}
+
+/* Párrafos */
+.section-text {
+  @apply text-gray-800 text-justify text-lg;
+  @apply dark:text-gray-200;
+  
+}
+
+/* Imagen */
+.image-style {
+  @apply rounded-xl shadow-lg;
+}
+
+/* Logo */
+.logo-footer {
+  @apply w-32;
+}
+
+/* Enlaces redes */
+.social-button {
+  @apply flex items-center justify-center text-white font-bold py-3 px-6 rounded-full shadow-lg hover:scale-105 transition w-full;
+}
+
+.btn-instagram {
+  @apply bg-gradient-to-r from-pink-500 to-yellow-500;
+}
+
+.btn-whatsapp {
+  @apply bg-green-500;
+}
+
+.btn-tiktok {
+  @apply bg-black;
+}
+
+.btn-facebook {
+  @apply bg-blue-600;
+}
