@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@import "./theme.css";
+@custom-variant dark (&:where(.dark, .dark *));
+
+main {
+  @apply font-sans text-center bg-yellow-100 dark:bg-gray-900;
+  @apply mt-2;
+}
+
+h1 {
+  @apply text-orange-500 dark:text-yellow-400;
+  @apply font-bold text-6xl p-4;
+}
+
+h2 {
+    @apply text-orange-500 dark:text-yellow-400;
+    @apply text-4xl font-bold my-2;
+}
+
+.juegos,
+.actividades {
+  @apply flex flex-wrap justify-center gap-5 my-5;
+}
+
+.img-info {
+  @apply w-[200px] h-[150px] object-cover border-2 border-orange-500 rounded-lg;
+}
+
+.botones {
+  @apply my-5;
+}
+
+.button-info {
+  @apply bg-red-400 dark:bg-red-600 text-white py-2 px-5 my-2 text-lg rounded-lg cursor-pointer transition-colors duration-300 hover:bg-red-500 dark:hover:bg-red-700;
+}
+
+.descripcion {
+  @apply mt-8 text-lg text-gray-800 dark:text-gray-300 p-5 bg-white dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-600 rounded-lg max-w-md mx-auto transition-all;
+}
