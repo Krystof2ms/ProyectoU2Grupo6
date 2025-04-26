@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@import "./theme.css";
+@custom-variant dark (&:where(.dark, .dark *));
+
+.container-info {
+  @apply bg-[url(/background/background-6.png)];
+}
+
+.title-huaycha {
+  @apply text-center underline font-extrabold text-7xl text-stroke-white-3;
+}
+
+.container-bt-info {
+  @apply flex flex-row gap-5 w-fit items-end p-4;
+}
+
+.container-images {
+  @apply flex flex-row gap-10 w-fit items-center justify-around p-4;
+}
+
+.button-info {
+  @apply text-white hover:text-black;
+  @apply bg-gradient-to-b to-40% from-white to-orange-500 hover:to-80%;
+  @apply font-bold rounded-xl py-2 px-4 text-lg w-fit h-fit;
+}
+
+.img-styles {
+  @apply w-40 h-50 rounded-lg;
+  @apply border-12 border-white;
+}
