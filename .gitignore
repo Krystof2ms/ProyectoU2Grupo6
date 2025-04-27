@@ -12,12 +12,8 @@ dist
 dist-ssr
 *.local
 
-public/*
-!public/logos/
-!public/icons/
-!public/others/
-!public/games/
-!public/background/
+public/*.html
+public/src
 
 # Editor directories and files
 .vscode/*

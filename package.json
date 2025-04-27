@@ -6,8 +6,9 @@
   "scripts": {
     "dev": "vite --open",
     "move-html": "node src/scripts/move-html-to-public.js",
-    "public-src":"mkdir -p public/src/js && cp -r src/js/ public/src",
-    "build": "npm run move-html && npm run public-src && vite build",
+    "public-html": "find . -name '*.html' ! -name 'index.html' -exec cp {} public/ \\;",
+    "public-src":"mkdir -p public/src && cp -r src/* public/src/",
+    "build": "npm run public-src && vite build",
     "preview": "vite preview",
     "lint:fix": "eslint . --fix",
     "lint": "eslint ."
