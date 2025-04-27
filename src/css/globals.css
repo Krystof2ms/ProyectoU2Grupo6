@@ -22,11 +22,20 @@ main {
 
 header {
   @apply w-full max-w-screen h-fit flex flex-row items-center justify-between gap-2 p-3;
-  @apply sticky top-0 z-50 bg-white shadow-xl;
-  @apply dark:bg-gray-400;
+  @apply sticky top-0 z-50 shadow-xl;
+  @apply bg-white dark:bg-gray-400 dark:shadow-white/50;
 }
 
 footer {
   @apply w-full max-w-screen h-fit flex flex-col gap-2 py-4;
   @apply bg-yellow-300 dark:bg-orange-400;
+}
+
+.content-footer {
+  @apply flex flex-row justify-around gap-4 p-1;
+}
+
+.bt-change-theme {
+  @apply flex items-center gap-2 hover:bg-gray-300 p-2 rounded-full;
+  @apply dark:bg-gray-800 dark:text-white dark:hover:bg-gray-500;
 }

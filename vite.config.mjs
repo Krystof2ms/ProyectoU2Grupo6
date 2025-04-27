@@ -10,7 +10,8 @@ export default defineConfig({
         main: 'index.html',
         acercaDe: 'acerca-de.html',
         juegos: 'juegos.html',
-        preVentas: 'pre-ventas.html'
+        preVentas: 'pre-ventas.html',
+        nuestroEquipo: 'nuestro-equipo.html',
       }
     } 
   }

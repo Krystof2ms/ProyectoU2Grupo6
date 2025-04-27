@@ -10,6 +10,11 @@ h1 {
   @apply flex flex-col gap-10; /* o los estilos que quieras, ya sin fondo */
 }
 
+.background-image {
+  @apply absolute inset-0 bg-cover bg-center bg-no-repeat  z-0;
+  @apply bg-[url('/background/bg-la-huaycha-1.jpg')];
+}
+
 .title-huaycha {
   @apply text-center underline font-extrabold text-7xl text-stroke-white-3;
   @apply dark:text-stroke-black-3;
