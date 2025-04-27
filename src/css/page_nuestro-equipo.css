@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@import "./theme.css";
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* General Styles */
+main {
+  @apply w-full;
+  @apply font-sans bg-gray-100 dark:bg-gray-800 py-10;
+}
+
+/* h1 Style */
+h1 {
+  @apply text-center mb-10 text-gray-800;
+}
+
+/* Members Section */
+.members {
+  @apply dark:bg-gray-800;
+  @apply grid grid-cols-3 justify-items-center gap-4 w-full;
+  @apply md:grid-cols-2 sm:grid-cols-1;
+}
+
+/* Individual Member Card */
+.member {
+  @apply bg-white dark:bg-gray-600;
+  @apply rounded-3xl shadow-lg p-5 w-90 text-center;
+  @apply flex flex-col items-center;
+}
+
+.member:hover {
+  @apply translate-y-1 shadow-xl transition-transform duration-300;
+}
+
+/* Member Image */
+.member img {
+  @apply w-30 h-30 object-cover rounded-full mb-4;
+}
+
+/* Member Name */
+.member h2 {
+  @apply text-xl mb-3 text-gray-800 dark:text-gray-200;
+}
+
+/* Member Description */
+.member p {
+  @apply text-sm text-gray-600 dark:text-gray-200;
+}

@@ -1,0 +1,40 @@
+<img class="logo-main" src="/logos/logo_la_huaycha.png" alt="logo La Huaycha" />
+<div class="flex flex-row gap-10">
+  <button
+    class="bt-change-theme"
+    id="theme-toggle"
+    onclick="changeToggleTheme()"
+  >
+    <div class="">
+      <img
+        src="/icons/icon_sun.svg"
+        alt="icon sun"
+        id="bt-icon-theme"
+        class="text-black dark:text-white w-5 h-5"
+      />
+    </div>
+    <p>Cambiar tema</p>
+  </button>
+  <div
+    class="flex flex-row gap-4 justify-around p-3 px-6 bg-gray-300 rounded-full"
+  >
+    <button class="hover:underline font-medium" onclick="goToIndex()">
+      Inicio
+    </button>
+    <button class="hover:underline font-medium" onclick="changePage('juegos')">
+      Juegos
+    </button>
+    <button
+      class="hover:underline font-medium"
+      onclick="changePage('pre-ventas')"
+    >
+      Pre-venta
+    </button>
+    <button
+      class="hover:underline font-medium"
+      onclick="changePage('acerca-de')"
+    >
+      Acerca de
+    </button>
+  </div>
+</div>

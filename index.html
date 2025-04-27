@@ -14,8 +14,7 @@
       <div class="relative">
         <!-- Fondo con filtro -->
         <div
-          class="absolute inset-0 bg-cover bg-center bg-no-repeat dark:contrast-50 z-0"
-          style="background-image: url('/background/bg-la-huaycha-1.jpg')"
+          class="background-image"
         ></div>
 
         <!-- Contenido encima -->
@@ -23,8 +22,8 @@
           <h1 class="title-huaycha">"La Huaycha"</h1>
           <div class="flex flex-row justify-between">
             <div class="container-bt-info">
-              <button class="button-info">Pre venta</button>
-              <button class="button-info">Ver más</button>
+              <button class="button-info" onclick="changePage('pre-ventas')">Pre venta</button>
+              <button class="button-info" onclick="changePage('juegos')">Ver más</button>
             </div>
             <div class="container-images">
               <img src="/others/food-1.png" alt="food 1" class="img-styles" />
