@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parque de Diversiones</title>
+    <link rel="stylesheet" href="./src/css/page_juegos.css" />
+    <link rel="stylesheet" href="./src/css/globals.css" />
+  </head>
+  <body>
+    <header id="main-header"></header>
+    <main>
+      <h1>JUEGOS RECREATIVOS:</h1>
+
+      <div class="juegos">
+        <img
+          class="img-info"
+          src="/games/image 21.png"
+          alt="Aro de Fuego"
+          id="aro-de-fuego"
+        />
+        <img
+          class="img-info"
+          src="/games/image 20.png"
+          alt="Montaña Rusa"
+          id="montana-rusa"
+        />
+        <img
+          class="img-info"
+          src="/games/image 19.png"
+          alt="Botes Chocones"
+          id="botes-chocones"
+        />
+        <img
+          class="img-info"
+          src="/games/image 18.png"
+          alt="Juegos Inflables"
+          id="juegos-inflables"
+        />
+      </div>
+
+      <div class="botones">
+        <button
+          class="button-info"
+          onclick="mostrarDescripcion('aro-de-fuego')"
+        >
+          ARO DE FUEGO
+        </button>
+        <button
+          class="button-info"
+          onclick="mostrarDescripcion('montana-rusa')"
+        >
+          MONTAÑA RUSA
+        </button>
+        <button
+          class="button-info"
+          onclick="mostrarDescripcion('botes-chocones')"
+        >
+          BOTES CHOCONES
+        </button>
+        <button
+          class="button-info"
+          onclick="mostrarDescripcion('juegos-inflables')"
+        >
+          JUEGOS INFLABLES
+        </button>
+      </div>
+      <div id="description" class="descripcion"></div>
+
+      <h2>ACTIVIDADES EN GRUPO:</h2>
+
+      <div class="actividades">
+        <img class="img-info" src="/games/image 5.png" alt="Actividad 1" />
+        <img class="img-info" src="/games/image 17.png" alt="Actividad 2" />
+        <img class="img-info" src="/games/image 16.png" alt="Actividad 3" />
+        <img class="img-info" src="/games/image 15.png" alt="Actividad 4" />
+        <img class="img-info" src="/games/image 14.png" alt="Actividad 5" />
+        <img class="img-info" src="/games/image 13.png" alt="Actividad 6" />
+        <img class="img-info" src="/games/image 12.png" alt="Actividad 7" />
+        <img class="img-info" src="/games/image 11.png" alt="Actividad 8" />
+      </div>
+    </main>
+    <footer id="main-footer"></footer>
+
+    <script src="/src/js/page_juegos.js" defer></script>
+    <script src="/src/js/utils/change_theme.js" defer></script>
+    <script src="/src/js/utils/change_page.js" defer></script>
+    <script src="/src/js/utils/load_header_footer.js"></script>
+  </body>
+</html>

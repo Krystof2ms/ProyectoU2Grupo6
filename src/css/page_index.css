@@ -2,12 +2,17 @@
 @import "./theme.css";
 @custom-variant dark (&:where(.dark, .dark *));
 
+h1 {
+  @apply dark:text-white;
+}
+
 .container-info {
-  @apply bg-[url(/background/background-6.png)];
+  @apply flex flex-col gap-10; /* o los estilos que quieras, ya sin fondo */
 }
 
 .title-huaycha {
   @apply text-center underline font-extrabold text-7xl text-stroke-white-3;
+  @apply dark:text-stroke-black-3;
 }
 
 .container-bt-info {

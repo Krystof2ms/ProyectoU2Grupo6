@@ -1,0 +1,7 @@
+{
+  "routes": [
+    { "src": "/acerca-de", "dest": "/acerca-de.html" },
+    { "src": "/juegos", "dest": "/juegos.html" },
+    { "src": "/pre-ventas", "dest": "/pre-ventas.html" }
+  ]
+}
