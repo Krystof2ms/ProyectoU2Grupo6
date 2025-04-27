@@ -17,7 +17,7 @@ h2 {
 }
 
 .juegos,
-.actividades {
+.activities {
   @apply flex flex-wrap justify-center gap-5 p-5;
 }
 
