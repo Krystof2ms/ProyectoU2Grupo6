@@ -11,7 +11,13 @@ node_modules
 dist
 dist-ssr
 *.local
-public/src
+
+public/*
+!public/logos/
+!public/icons/
+!public/others/
+!public/games/
+!public/background/
 
 # Editor directories and files
 .vscode/*
