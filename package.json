@@ -2,13 +2,12 @@
   "name": "page",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "dev": "vite --open",
-    "move-html": "node src/scripts/move-html-to-public.js",
-    "public-html": "find . -name 'dist/*.html' ! -name 'index.html' -exec cp {} dist/public/ \\;",
+    "restructure-html": "node src/scripts/restructure-html.js",
     "public-src":"mkdir -p public/src && cp -r src/* public/src/",
-    "build": "npm run public-src && && vite build && npm run public-html",
+    "build": "npm run public-src && vite build && npm run restructure-html",
     "preview": "vite preview",
     "lint:fix": "eslint . --fix",
     "lint": "eslint ."
