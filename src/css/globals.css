@@ -23,12 +23,12 @@ main {
 header {
   @apply w-full max-w-screen h-fit flex flex-row items-center justify-center sm:justify-between gap-2 p-3;
   @apply sticky top-0 z-50 shadow-xl;
-  @apply bg-white dark:bg-gray-400 dark:shadow-white/50;
+  @apply bg-white dark:bg-gray-400 dark:shadow-gray-700;
 }
 
 footer {
-  @apply w-full max-w-screen h-fit flex flex-col gap-2 py-4;
   @apply bg-yellow-300 dark:bg-orange-400;
+  @apply w-full max-w-screen h-fit flex flex-col gap-2 py-4;
 }
 
 /* Clases del header*/
@@ -71,8 +71,9 @@ footer {
 /* clases footer */
 
 .content-footer {
-  @apply flex flex-col gap-10 justify-between p-10;
-  @apply sm:flex-row;
+  @apply flex flex-row flex-wrap justify-between gap-10 p-10;
+  @apply md:grid md:grid-cols-2;
+  @apply lg:flex lg:flex-row;
 }
 
 .footer-info {
