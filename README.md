@@ -129,7 +129,7 @@ Puedes ejecutar estos comandos con `npm`, `pnpm` o `yarn` según el gestor de pa
 ### 🔧 `dev`
 
 ```bash
-pnpm dev
+npm dev
 ```
 Ejecuta el servidor de desarrollo de Vite y abre automáticamente el navegador en la URL local (por defecto, http://localhost:5173).
 
