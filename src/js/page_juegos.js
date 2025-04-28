@@ -15,7 +15,8 @@ function showDescription(game) {
   const descriptionElement = document.getElementById("description");
 
   // Actualizar el texto de la descripción con el valor correspondiente
-  descriptionElement.innerText = descriptions[game];
+  const descriptionText = document.getElementById("description-text");
+  descriptionText.innerHTML = descriptions[game] || "Descripción no disponible.";
 
   // Buscar el botón que fue presionado para activar esta función
   const button = document.querySelector(

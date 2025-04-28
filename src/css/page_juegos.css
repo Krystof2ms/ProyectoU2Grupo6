@@ -40,3 +40,7 @@ h2 {
   @apply border-2 border-gray-300 dark:border-gray-600 rounded-lg;
   @apply text-lg max-w-md transition-all;
 }
+
+.text-info-game {
+  @apply text-black dark:text-white
+}
