@@ -12,7 +12,7 @@ h1 {
 
 .background-image {
   @apply absolute inset-0 bg-cover bg-center bg-no-repeat z-0 dark:contrast-50;
-  @apply bg-[url('/background/bg-la-huaycha-1.jpg')];
+  @apply bg-[url('/background/bg-la-huaycha-1.png')];
 }
 
 .title-huaycha {

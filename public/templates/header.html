@@ -1,7 +1,10 @@
 <img class="logo-main" src="/logos/logo_la_huaycha.png" alt="logo La Huaycha" />
 
-<div class="content-buttons-main">
-  <button class="bt-change-theme" id="theme-toggle" onclick="changeToggleTheme()">
+  <button
+    class="bt-change-theme"
+    id="theme-toggle"
+    onclick="changeToggleTheme()"
+  >
     <div class="bt-icon-theme-container">
       <img
         src="/icons/icon_sun.svg"
@@ -12,12 +15,17 @@
     </div>
     <p>Cambiar tema</p>
   </button>
-
   <div class="menu-buttons">
-    <button class="menu-button" onclick="goToIndex()">Inicio</button>
-    <button class="menu-button" onclick="changePage('juegos')">Juegos</button>
-    <button class="menu-button" onclick="changePage('pre-ventas')">Pre-venta</button>
-    <button class="menu-button" onclick="changePage('acerca-de')">Acerca de</button>
+    <button class="menu-button" onclick="goToIndex()">
+      <p class="text-menu-button">Inicio</p>
+    </button>
+    <button class="menu-button" onclick="changePage('juegos')">
+      <p class="text-menu-button">Juegos</p>
+    </button>
+    <button class="menu-button" onclick="changePage('pre-ventas')">
+      <p class="text-menu-button">Pre-venta</p>
+    </button>
+    <button class="menu-button" onclick="changePage('acerca-de')">
+      <p class="text-menu-button">Acerca de</p>
+    </button>
   </div>
-</div>
-
