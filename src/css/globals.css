@@ -21,7 +21,7 @@ main {
 }
 
 header {
-  @apply w-full max-w-screen h-fit flex flex-row items-center justify-between gap-2 p-3;
+  @apply w-full max-w-screen h-fit flex flex-row items-center justify-center sm:justify-between gap-2 p-3;
   @apply sticky top-0 z-50 shadow-xl;
   @apply bg-white dark:bg-gray-400 dark:shadow-white/50;
 }
@@ -31,11 +31,101 @@ footer {
   @apply bg-yellow-300 dark:bg-orange-400;
 }
 
-.content-footer {
-  @apply flex flex-row justify-around gap-4 p-1;
+/* Clases del header*/
+
+.logo-main {
+  @apply w-32 sm:w-40;
+}
+
+.content-buttons-main {
+  @apply flex flex-row gap-10 items-center;
 }
 
 .bt-change-theme {
-  @apply flex items-center gap-2 hover:bg-gray-300 p-2 rounded-full;
-  @apply dark:bg-gray-800 dark:text-white dark:hover:bg-gray-500;
+  @apply dark:text-white hover:bg-gray-300 dark:hover:text-black;
+  @apply flex flex-col items-center justify-center gap-2 cursor-pointer rounded-2xl p-1;
+}
+
+.bt-icon-theme-container {
+  @apply flex items-center justify-center;
+}
+
+.bt-icon-theme {
+  @apply w-5 h-5;
+}
+
+.menu-buttons {
+  @apply grid grid-cols-2 gap-4 justify-around p-3 px-6 bg-gray-300 rounded-2xl;
+  @apply sm:flex sm:flex-row sm:rounded-full;
+}
+
+.menu-button {
+  @apply hover:underline font-medium cursor-pointer;
+}
+
+/* clases footer */
+
+.content-footer {
+  @apply flex flex-col gap-10 justify-between p-10;
+  @apply sm:flex-row;
+}
+
+.footer-info {
+  @apply flex flex-col items-start w-70;
+}
+
+.footer-logo {
+  @apply bg-gray-100 rounded-2xl;
+}
+
+.footer-description {
+  @apply text-justify text-sm mt-4;
+}
+
+.footer-schedule {
+  @apply flex flex-col gap-1;
+}
+
+.footer-contact {
+  @apply flex flex-col gap-1;
+}
+
+.footer-title {
+  @apply w-[14rem] text-xl font-bold mb-2;
+}
+
+.footer-text {
+  @apply text-base;
+}
+
+.footer-address {
+  @apply w-[14rem] text-base;
+}
+
+.footer-social {
+  @apply flex flex-col items-center justify-center gap-4;
+}
+
+.footer-social-icons {
+  @apply flex flex-row gap-5;
+}
+
+.social-icon {
+  @apply w-10 h-10;
+}
+
+.footer-bottom {
+  @apply flex flex-col items-center justify-center gap-1 p-2 bg-gray-300 mt-10;
+}
+
+.footer-developer {
+  @apply font-bold underline hover:text-red-900 transition-colors duration-300;
+}
+
+.footer-bottom-div {
+  @apply flex flex-col items-center justify-center gap-2;
+}
+
+.footer-button {
+  @apply bg-gray-500 rounded-full p-2 text-white font-bold hover:bg-gray-900;
 }

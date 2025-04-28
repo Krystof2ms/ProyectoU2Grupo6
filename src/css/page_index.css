@@ -24,8 +24,14 @@ h1 {
   @apply flex flex-row gap-5 w-fit items-end p-4;
 }
 
+.content-main-info {
+  @apply flex justify-center items-center flex-col;
+  @apply sm:flex-row sm:justify-between sm:items-end;
+}
+
 .container-images {
-  @apply flex flex-row gap-10 w-fit items-center justify-around p-4;
+  @apply flex flex-col gap-10 w-fit items-center justify-around p-4;
+  @apply md:flex-row;
 }
 
 .button-info {

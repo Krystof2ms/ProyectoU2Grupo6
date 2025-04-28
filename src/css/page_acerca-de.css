@@ -20,7 +20,8 @@ h1 {
 
 /* Estilos base para secciones */
 .section {
-  @apply flex flex-row items-center justify-center min-h-screen p-4 bg-white opacity-80;
+  @apply flex flex-col items-center justify-center min-h-screen p-4 bg-white opacity-80;
+  @apply sm:flex-row;
 }
 
 .section-reverse {

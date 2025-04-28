@@ -16,7 +16,7 @@ h2 {
   @apply text-4xl font-bold my-2;
 }
 
-.juegos,
+.games,
 .activities {
   @apply flex flex-wrap justify-center gap-5 p-5;
 }
@@ -36,7 +36,7 @@ h2 {
 }
 
 .description {
-  @apply text-gray-800 dark:text-gray-300 p-5 bg-white dark:bg-gray-800;
+  @apply text-gray-800 dark:text-gray-300 p-6 bg-white dark:bg-gray-800;
   @apply border-2 border-gray-300 dark:border-gray-600 rounded-lg;
-  @apply mt-8 text-lg max-w-md mx-auto transition-all;
+  @apply text-lg max-w-md transition-all;
 }
