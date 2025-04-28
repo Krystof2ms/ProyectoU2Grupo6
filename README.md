@@ -129,31 +129,31 @@ Puedes ejecutar estos comandos con `npm`, `pnpm` o `yarn` según el gestor de pa
 ### 🔧 `dev`
 
 ```bash
-npm dev
+npm run dev
 ```
 Ejecuta el servidor de desarrollo de Vite y abre automáticamente el navegador en la URL local (por defecto, http://localhost:5173).
 
 ### 🏗️ `build`
 ```bash
-npm build
+npm run build
 ```
 Genera una versión optimizada y lista para producción en la carpeta `dist`.
 
 ### 👀 `preview`
 ```bash
-npm preview
+npm run preview
 ```
 Sirve localmente la carpeta dist para previsualizar el sitio exactamente como se vería en producción.
 
 ### 🧹 `lint`
 ```bash
-npm lint
+npm run lint
 ```
 Ejecuta ESLint en todo el proyecto para mostrar errores y advertencias de estilo o buenas prácticas en tu código JavaScript.
 
 ### 🛠️ `lint:fix`
 ```bash
-npm lint:fix
+npm run lint:fix
 ```
 Igual que el anterior, pero además intenta corregir automáticamente los problemas detectados por ESLint.
 
